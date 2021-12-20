@@ -1,73 +1,67 @@
-# An Analysis of Kickstarter Campaigns
-For this project, I analyzed Kickstarter data in order to discover the elements necessary for a successful campaign. The data analysis focuses on campaigns in the theater category and analyzes both successful and failed campaigns. 
+# Kickstarting with Excel
 
-## Project Goal / Client Overview
+## Overview of Project
+My client, Louise, is an up-and-coming playwright who is using the crowdfunding platform, Kickstarter, to fund her latest project.
+Her campaign is off to a successful start, but she is interested in seeing how similar projects have fared in relation to their launch dates and funding goals.
+This project will need to utilize Kickstarter data to identify projects that are similar to Louise's campaign.
+Additionally, this project will need to analyze how launch date and funding goals are related to a campaign's ultimate success or failure.
+I will provide a Pivot Table, Data Table, and Two Line Charts to help Louise visualize this information. 
 
-### Client
-*Louise
-*Up-and-Coming Playwright
-*looking to fund a play in the United States titled, "Fever"
-*Projected budget=$10,000
+### Purpose
+To visualize how launch dates and funding goals affect the ultimate success or failure of Kickstarter campaigns that are comparable to Louise's campaign. 
 
-### Project Goal
-*Determine the specific factors that make a Kickstarter campaign successful
-*Use insights to plan a successful Kickstarter campaign
+## Analysis and Challenges
 
-## Category and Subcategory Analysis 
-The chart below represents the total number of US theater campaigns, and is sorted by their outcome. 
+### Analysis of Outcomes Based on Launch Date
+The following Pivot Table has been created to analyze how a campaign's success is affected by its launch date. This table specifically analyzes campaigns in the Theater parent category: 
 
-![Theater Outcomes](https://user-images.githubusercontent.com/93888037/146697906-88657210-6e88-423c-b659-86f463e7fcef.png)
+![Theater Outcomes by Launch Date - Challenge](https://user-images.githubusercontent.com/93888037/146707595-7025b82e-4dfc-42bc-b1a2-ebb209a69589.png)
 
-When looking at this bar chart, we can see that theater campaigns tend to be successful in the United States. In a total of 912 theater campaigns, 525 were successful while 349 failed and 26 were cancelled. These close outcomes led us to analyze specific forms of theater campaigns to see if there was any additional insight into which types of Kickstarter campaigns were successful. 
-The chart below represents the total number of US theater campaigns, divided into three subcategories: plays, theater spaces, and musicals. The bar chart is again sorted by outcome. 
+Campaigns are most successful in May and June. However, this is also when the most theater campaigns are launched. 
+The number of failed campaigns is fairly consistent throughout the year. The rate of failure is particularly high in October, where about 43% of projects fail, or in December, where about 47% of projects fail.
 
-![US Subcategory Outcomes](https://user-images.githubusercontent.com/93888037/146697922-cecdf2d6-032d-4e05-8da9-51d3ba45f89f.png)
+This is the line chart created from the Pivot Table. It shows that the most successful campaigns are launched in May and June, while the least number of successful campaigns are launched in December.
+January has the highest amount of canceled projects, which is consistent with the idea that fundraising is the most difficult in December. 
 
-Even though plays are the most popular type of theater campaigns, plays are significantly more successful than musical or theater space campaigns. Campaigns for plays in the United States are successful about 61% of the time. 
+![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/93888037/146707638-a3b1f618-6c18-448d-87ad-8066937c3bb9.png)
 
-## Launch Date 
+### Analysis of Outcomes Based on Goals
+The line chart below visualizes the percentage of failed, successful, and canceled campaigns for plays based on their goal amount. 
 
-Now that we know that a campaign for a play will likely be successful in the United States, we need to examine the other factors that allowed that success.
-This chart shows the outcome of US Theater Campaigns by Launch Date. 
+![Outcomes_vs_Goals](https://user-images.githubusercontent.com/93888037/146707651-b1439df2-9334-4a8f-aab5-8b9711c3795e.png)
 
-![US Theater Campaigns by Launch](https://user-images.githubusercontent.com/93888037/146697931-9d16fa0e-2f8f-4e7b-879b-94a18b9f097b.png)
+When the Kickstarter results were filtered by subcategory, no play campaigns were listed as canceled. Our focus can shift to play campaigns that were succesful or failed. 
+76% of play campaigns with a goal of under $1000 were successful. However, the percentage of successful campaigns does not decrease significantly when the range is adjusted to $1000-$4999. This indicates that there is very little difference in outcome between a project under $1000 and a project between $1000-$4999.
+Additionally, the rate of success does not change much between these three goal amounts: $5000-$9999, $10,000-$14,999, and $15,000-$19,999. Each of these goal amount ranges has a rate of success between 50%-55%.
+While projects from $20,000-$24,999 are about 45% successful, there is a large decrease in the rate of success when the goal amount is increased to $25,000-$34,999.
+There were only 2 total successful projects with goal amounts over $45,000. 
+The rates of failure are particularly high in these goal amount ranges: $25,000-$29,999; $30,000-$34,999; and Greater than $50,000.
+The goal amount of $45,000-$49,999 only included one project, and that project failed.
 
-The highest number of successful campaigns are launched in spring - early summer (May-Aug), with the highest number of successful campaigns launching in May. Even though there are many successful campaigns in Jun-Aug, there are far fewer failed campaigns launched in May. Additionally, there is a relatively low number of failed campaigns in both January and November. 
+### Challenges and Difficulties Encountered
+One challenge related to this data set is the various parent categories and subcategories available. For example, my Pivot Table and initial line chart (by launch date) is filtered by the parent category of Theater. However, the second line chart and data table (by Goal Amount) is filtered by the subcategory "play."
+When analyzing and visualizing data for Louise, it would be important to clarify how the results might vary based on the subcategory. Particularly because the theater(spaces) subcategory has very different data than theater(plays). If I were to attack this challenge again, I might add a subcategory filter to the Pivot Table and line chart that visualizes project success based on launch date. 
 
-## Edinburgh Frige Festival
+When calculating the data, it was difficult to input the COUNTIFS formulas for each goal amount range. Ensuring that each comma, quotation mark, dollar sign, and inequality symbol was correct was time-consuming, but ultimately vital to the overall project. However, I was able to complete the task and after a few rows, the formula became easier and easier to perfect.
 
-The client specifically asked to see data on five plays that she had seen at the Edinburgh Fringe Festival that had been funded through Kickstarter. The goal and pledge information for those plays is listed below. 
+## Results
 
-![EFF Data](https://user-images.githubusercontent.com/93888037/146697936-94ba3d1e-e07b-4789-a120-d5adfcd0547e.png)
+- What are two conclusions you can draw about the Outcomes based on Launch Date?
+1. Projects launched in May or June have the best chance of being successful.
+2. Projects launched in November or December carry the most risk and have the highest chance of failure.
 
-We can see by this data that successful Fringe Festival plays tended to have low goals--under $4000--and had an overall average donation of about $40 per backer. 
+- What can you conclude about the Outcomes based on Goals?
+1. Projects with goals equal to or less than $4,999 have the highest rate of success.
+2. There is very little difference in the rate of success for projects in these goal amount ranges: $5,000-$9,999; $10,000-$14,999; and $15,000-$19,999. 
+3. Projects with these goal amount ranges carry the highest risk for failure: $25,000-$29,999; $30,000-$34,999, Greater than $50,000. 
 
-## Examining Goals and Pledges for US Play Campaigns
+- What are some limitations of this dataset?
+1. Some goal amount ranges have extremely limited data. For example, there was only one play campaign launched with a goal amount of $45,000-$49,999.
+2. Because this dataset includes international campaigns, we may see very different results if we filtered by country. Even once filtered by country, we can't filter by city. More specific locations could have very different campaign outcomes. For example, I would predict that a play campaign in Greenville, North Carolina might be less successful than a play campaign in a larger city like Raleigh, North Carolina. However, I would predict that a play campaign in Manhattan or Los Angeles might see a lower rate of success because of the number of actors, directors, and playwrights that might be looking for funding in that area.
+3. This dataset does not reflect marketing for the campaign. The method of sharing the campaign would have a significant impact on whether or not a campaign was successful or not.
 
-When examining the average goal and amount pledged for successful and failed US Play campaigns, significant outliers affected the mean. However, after calculating the Quartiles and IQR, we can see trends in the data. 
+- What are some other possible tables and/or graphs that we could create?
+1. I would be interested in creating a Pivot Table that lists the number of successful play projects by goal amount and then filters for country. I would be interested to see how goal amounts affect overall outcome in various countries.
+2. I think it would be worthwhile to visualize how the length of the campaign is related to the outcome of the project. How long do projects generally take to be successful?
+3. For Louise's purpose in particular, she would need a visualization of the number of play campaigns that were successful by launch date. Filtering only by the parent category, theater, is not specific enough for her project. Funding a theater space in particular seems like it would be a very different campaign than funding one production.
 
-![IQR US Plays](https://user-images.githubusercontent.com/93888037/146697946-7dbf6e5d-dc64-44d1-878c-2660ac535d1a.png)
-
-25% of successful US play campaigns have a goal under $2,000 and 75% of successful US play campaigns have a goal under $15,000. The median goal is $5,000. 
-
-Additionally, 25% of successful US play campaigns had less than $200 pledged and 75% of successful US play campaigns had less that $5,902 pledged. 
-
-Failed campaigns had somewhat higher goals than successful campaigns. However, the difference in the numbers is not significant for our purposes, because the UQ, LQ, and Median goals for failed campaigns are all lower than the successful campaigns. This indicates that the goal amount is not the most important factor in which campaigns succeed and which campaigns fail. 
-
-![Successful US Plays Box](https://user-images.githubusercontent.com/93888037/146697953-b526f81d-ebf3-42f0-9395-eb61c54e0488.png)
-
-This box and whisker plot helps us visualize the outliers in the goals and pledged amounts for successful US Plays. Specifically, this shows that the client's initial goal of $10,000 is considered an outlier. 
-
-## Final Analysis 
-
-The data suggests that Louise's initial Kickstarter campaign goal of $10,000 is much higher than the majority of successful campaigns for plays.
-
-Additionally, crowdfunded plays that Louise herself indicated were successful final projects (at the Edinburgh Film Festival) had significantly lower goals than $10,000. While goal amount is important, it is not the only factor that contributes to a successful Kickstarter campaign. 
-
-Launch Date is a significant factor in whether or not a campaign succeeds. Campaigns launched in May have the best chance of being successful. 
-
-Successful campaigns for plays in the United States have an average donation per backer of $81.65 and an average of 121 backers. These plays have a median donation per backer of $52.50 and a median of 27 backers.
-
-## Advice
-
-I would advise the client to revisit the project's budget. If possible, adjust budget to approximately $5,000. We can expect the median backer to donate about $50, so the campaign would need to reach more than 100 backers to reach a lowered goal of $5,000. The campaign should launch in May. 
