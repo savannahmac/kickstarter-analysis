@@ -16,11 +16,12 @@ For this project, I analyzed Kickstarter data in order to discover the elements 
 ## Category and Subcategory Analysis 
 The chart below represents the total number of US theater campaigns, and is sorted by their outcome. 
 
-![Theater_Outcomes](
+![Theater Outcomes](https://user-images.githubusercontent.com/93888037/146697906-88657210-6e88-423c-b659-86f463e7fcef.png)
+
 When looking at this bar chart, we can see that theater campaigns tend to be successful in the United States. In a total of 912 theater campaigns, 525 were successful while 349 failed and 26 were cancelled. These close outcomes led us to analyze specific forms of theater campaigns to see if there was any additional insight into which types of Kickstarter campaigns were successful. 
 The chart below represents the total number of US theater campaigns, divided into three subcategories: plays, theater spaces, and musicals. The bar chart is again sorted by outcome. 
 
-![Us_Theater_Campaigns_by_Outcome_and_Subcategory](C:\Users\Savannah McIntyre\Desktop\Analysis Projects\Crowdfunding Analysis/US Subcategory Outcomes.png)
+![US Subcategory Outcomes](https://user-images.githubusercontent.com/93888037/146697922-cecdf2d6-032d-4e05-8da9-51d3ba45f89f.png)
 
 Even though plays are the most popular type of theater campaigns, plays are significantly more successful than musical or theater space campaigns. Campaigns for plays in the United States are successful about 61% of the time. 
 
@@ -29,7 +30,7 @@ Even though plays are the most popular type of theater campaigns, plays are sign
 Now that we know that a campaign for a play will likely be successful in the United States, we need to examine the other factors that allowed that success.
 This chart shows the outcome of US Theater Campaigns by Launch Date. 
 
-![Us_Theater_Campaigns_by_Outcome_and_Launch Date](C:\Users\Savannah McIntyre\Desktop\Analysis Projects\US Theater Campaigns by Launch.png)
+![US Theater Campaigns by Launch](https://user-images.githubusercontent.com/93888037/146697931-9d16fa0e-2f8f-4e7b-879b-94a18b9f097b.png)
 
 The highest number of successful campaigns are launched in spring - early summer (May-Aug), with the highest number of successful campaigns launching in May. Even though there are many successful campaigns in Jun-Aug, there are far fewer failed campaigns launched in May. Additionally, there is a relatively low number of failed campaigns in both January and November. 
 
@@ -37,7 +38,7 @@ The highest number of successful campaigns are launched in spring - early summer
 
 The client specifically asked to see data on five plays that she had seen at the Edinburgh Fringe Festival that had been funded through Kickstarter. The goal and pledge information for those plays is listed below. 
 
-![Edinburgh_Fringe_Festival_Data](C:\Users\Savannah McIntyre\Desktop\Analysis Projects\EFF Data.png)
+![EFF Data](https://user-images.githubusercontent.com/93888037/146697936-94ba3d1e-e07b-4789-a120-d5adfcd0547e.png)
 
 We can see by this data that successful Fringe Festival plays tended to have low goals--under $4000--and had an overall average donation of about $40 per backer. 
 
@@ -45,7 +46,7 @@ We can see by this data that successful Fringe Festival plays tended to have low
 
 When examining the average goal and amount pledged for successful and failed US Play campaigns, significant outliers affected the mean. However, after calculating the Quartiles and IQR, we can see trends in the data. 
 
-![US_Plays_Goals_and_Pledged_Amounts](C:\Users\Savannah McIntyre\Desktop\Analysis Projects\IQR US Plays.png)
+![IQR US Plays](https://user-images.githubusercontent.com/93888037/146697946-7dbf6e5d-dc64-44d1-878c-2660ac535d1a.png)
 
 25% of successful US play campaigns have a goal under $2,000 and 75% of successful US play campaigns have a goal under $15,000. The median goal is $5,000. 
 
@@ -53,7 +54,7 @@ Additionally, 25% of successful US play campaigns had less than $200 pledged and
 
 Failed campaigns had somewhat higher goals than successful campaigns. However, the difference in the numbers is not significant for our purposes, because the UQ, LQ, and Median goals for failed campaigns are all lower than the successful campaigns. This indicates that the goal amount is not the most important factor in which campaigns succeed and which campaigns fail. 
 
-![Successful_US_Play_Campaigns](C:\Users\Savannah McIntyre\Desktop\Successful US Plays Box.png)
+![Successful US Plays Box](https://user-images.githubusercontent.com/93888037/146697953-b526f81d-ebf3-42f0-9395-eb61c54e0488.png)
 
 This box and whisker plot helps us visualize the outliers in the goals and pledged amounts for successful US Plays. Specifically, this shows that the client's initial goal of $10,000 is considered an outlier. 
 
